@@ -5,7 +5,7 @@ import time
 
 money = 0
 weapon = 0
-shiled = 0
+shield = 0
 horse = 0
 
 def clear() :
@@ -24,7 +24,7 @@ while True :
             print("할 일을 선택하세요. \n 1. 돈 벌기  2. 상점  3. 나가기")
             print("잔액 =",money)
             print("무기 =",weapon)
-            print("방패 =",shiled)
+            print("방패 =",shield)
             print("말 =",horse)      
             
             menu2_todo = input()
@@ -51,7 +51,7 @@ while True :
                     print("1.무기  2. 방패  3. 말  e. 나가기\n")
                     print("잔액 =",money)
                     print("\n무기 =",weapon)
-                    print("방패 =",shiled)
+                    print("방패 =",shield)
                     print("말 =",horse)
                     purchase = input()
                     if purchase == "1" or purchase == "2" or purchase == "3" :
@@ -72,7 +72,7 @@ while True :
                                 clear()
                                 if money >= 50 :
                                     money -= 50
-                                    shiled += 1
+                                    shield += 1
                                     print("방패를 구입했습니다.")
                                     TC_1()
                                     break
